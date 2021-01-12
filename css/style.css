@@ -3,7 +3,7 @@ body {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-
+/* - DESKTOP VERSION */
 /* ! Revolut Logo */
 .logo a img {
     width: 100%;
@@ -11,7 +11,7 @@ body {
 }
 
 /* ! DropDown Menu */
-.dropdown_menu{
+.dropdown_menu {
     width: 250px;
     border: 1px solid white;
     border-radius: 10px;
@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     line-height: 30px;
 }
-.dropdown_menu ul li:hover{
+.dropdown_menu ul li:hover {
     color: #2184c6;
     font-size: 1.6rem;
 }
@@ -35,28 +35,30 @@ body {
 }
 
 /* ! Chevron down & up */
-.lenguage:hover i{
+.lenguage:hover i {
     transform: rotate(180deg);
 }
 
-/* ! Mobile version */
-div.container{
+
+/* - MOBILE VERSION */
+nav.mobile_nav {
     display: none;
     margin-top: 10px;
 }
-div.container img{
+/* ! Revolut Logo */
+nav.mobile_nav img {
     width: 80px;
 }
-div.container a{
+/* ! Hamburger Menu */
+nav.mobile_nav a {
     font-size: 50px;
     color: white;
 }
 
 
 /* - Recyclable classes */
-ul{
-    padding: 0;
-}
+ul {padding: 0;}
+
 ul li {
     display: inline;
     list-style: none;
@@ -65,9 +67,8 @@ ul li {
     line-height: 80px;
     position: relative;
 }
-ul li:hover {
-    cursor: pointer;
-}
+ul li:hover {cursor: pointer;}
+
 .my_btn {
     padding: 5px 10px;
     border-radius: 20px;
@@ -75,20 +76,20 @@ ul li:hover {
     opacity: 0.8;
     transition: all 0.5s;
 }
-.my_btn:hover{
+.my_btn:hover {
     opacity: 1;
     padding: 10px 15px;
 }
 
 
 /* - Media Query Responsive */
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px) {
     /* ! Desktop */
-    nav.container{
+    nav.desktop_nav {
         display: none;
     }
     /* ! Mobile */
-    div.container{
+    nav.mobile_nav {
         display: block;
     }
 }
