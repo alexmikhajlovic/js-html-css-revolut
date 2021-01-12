@@ -13,7 +13,6 @@ body {
 /* ! DropDown Menu */
 .dropdown_menu{
     width: 250px;
-    background-color: transparent;
     border: 1px solid white;
     border-radius: 10px;
     position: absolute;
@@ -25,21 +24,29 @@ body {
 .dropdown_menu ul li {
     display: flex;
     flex-direction: column;
-    line-height: 50px;
+    line-height: 30px;
+}
+.dropdown_menu ul li:hover{
+    color: #2184c6;
+    font-size: 1.6rem;
 }
 .dropdown_menu.active {
     display: block;
 }
 
-
-
-
+/* ! Chevron down & up */
+.lenguage:hover i{
+    transform: rotate(180deg);
+}
 
 /* - Recyclable classes */
+ul{
+    padding: 0;
+}
 ul li {
     display: inline;
     list-style: none;
-    padding: 10px 5px;
+    padding: 18px 5px;
     font-size: 1.4rem;
     line-height: 80px;
     position: relative;
@@ -52,4 +59,17 @@ ul li:hover {
     border-radius: 20px;
     background: linear-gradient(90deg,#2184c6, #3cc5eb);
     opacity: 0.8;
+    transition: all 0.5s;
+}
+.my_btn:hover{
+    opacity: 1;
+    padding: 10px 15px;
+}
+
+
+/* - Media Query Responsive */
+@media screen and (max-width: 1199px){
+    nav.container{
+        display: none;
+    }
 }
