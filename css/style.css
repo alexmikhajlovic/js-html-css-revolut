@@ -7,6 +7,20 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+.has_sub_menu{
+    position: relative;
+}
+.dropdown_menu{
+    width: 250px;
+    background-color: grey;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+}
+.dropdown_menu ul li {
+    display: block;
+}
+
 
 
 
