@@ -3,21 +3,31 @@ body {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* ! Revolut Logo */
 .logo a img {
     width: 100%;
     margin-top: 10px;
 }
-.has_sub_menu{
-    position: relative;
-}
+
+/* ! DropDown Menu */
 .dropdown_menu{
     width: 250px;
-    background-color: grey;
+    background-color: transparent;
+    border: 1px solid white;
     border-radius: 10px;
     position: absolute;
-    top: 80px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
 }
 .dropdown_menu ul li {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+.dropdown_menu.active {
     display: block;
 }
 
@@ -25,14 +35,14 @@ body {
 
 
 
-
-/* ! Recyclable classes */
+/* - Recyclable classes */
 ul li {
     display: inline;
     list-style: none;
-    padding: 0 5px;
+    padding: 10px 5px;
     font-size: 1.4rem;
     line-height: 80px;
+    position: relative;
 }
 ul li:hover {
     cursor: pointer;
