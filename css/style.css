@@ -39,6 +39,20 @@ body {
     transform: rotate(180deg);
 }
 
+/* ! Mobile version */
+div.container{
+    display: none;
+    margin-top: 10px;
+}
+div.container img{
+    width: 80px;
+}
+div.container a{
+    font-size: 50px;
+    color: white;
+}
+
+
 /* - Recyclable classes */
 ul{
     padding: 0;
@@ -69,7 +83,12 @@ ul li:hover {
 
 /* - Media Query Responsive */
 @media screen and (max-width: 1199px){
+    /* ! Desktop */
     nav.container{
         display: none;
+    }
+    /* ! Mobile */
+    div.container{
+        display: block;
     }
 }
