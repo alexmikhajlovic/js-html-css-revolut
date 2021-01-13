@@ -1,3 +1,4 @@
+* {transition: all 0.5s;}
 body {
     background-color: black;
     color: white;
@@ -32,14 +33,8 @@ body {
 }
 .dropdown_menu.active {display: block;}
 
-
 /* ! Chevron down & up */
-.lenguage i {
-    transition: all 0.5s;
-}
-.lenguage:hover i {
-    transform: rotate(180deg);
-}
+.lenguage:hover i {transform: rotate(180deg);}
 
 
 /* - MOBILE VERSION */
@@ -48,9 +43,8 @@ nav.mobile_nav {
     margin-top: 10px;
 }
 /* ! Revolut Logo */
-nav.mobile_nav img {
-    width: 80px;
-}
+nav.mobile_nav img {width: 80px;}
+
 /* ! Hamburger Menu */
 nav.mobile_nav a {
     font-size: 50px;
@@ -70,19 +64,21 @@ ul li {
     position: relative;
 }
 ul li:hover {cursor: pointer;}
+ul li span:hover {color: #2184c6;}
 
+/* button */
 .my_btn {
     padding: 5px 10px;
     border-radius: 20px;
     background: linear-gradient(90deg,#2184c6, #3cc5eb);
     opacity: 0.8;
-    transition: all 0.5s;
 }
 .my_btn:hover {
     opacity: 1;
     padding: 10px 15px;
 }
-/* Small text */
+
+/* Small text ('Beta') & ('NEW') */
 .beta::after {
     position: absolute;
     top: 0;
